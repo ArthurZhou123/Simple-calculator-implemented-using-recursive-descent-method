@@ -9,3 +9,8 @@
 一个选择中的终结符与非终结符序列与相匹配的输入以及其他过程的调用相对应，而选择与在代码中的替代情况（case语句和if语句）相对应。
 
 首先写出他的左结合文法规则：
+![左结合文法的图片](https://github.com/ArthurZhou123/Simple-calculator-implemented-using-recursive-descent-method/blob/master/imgs/%E5%B7%A6%E7%BB%93%E5%90%88%E6%96%87%E6%B3%95.png);
+然后是右结合文法规则：与左结合类似并且比左结合简单，因为不需要消除左递归，
+![右结合文法的图片](https://github.com/ArthurZhou123/Simple-calculator-implemented-using-recursive-descent-method/blob/master/imgs/%E5%8F%B3%E7%BB%93%E5%90%88%E6%96%87%E6%B3%95.png);
+根据文法规则和简单的DFA识别token，就可完成这个简单的计算器了，最后做出来的结果如下图：
+![结果的图片](https://github.com/ArthurZhou123/Simple-calculator-implemented-using-recursive-descent-method/blob/master/imgs/result.png);
