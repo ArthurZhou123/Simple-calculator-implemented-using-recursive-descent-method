@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        h3{
+            text-align:center;
+        }
+        .container{
+            height: 278px;
+            width:208px;
+            margin:10px auto;
+            border:black solid 1px;
+            position: relative;
+        }
+        .text{
+            float: left;
+            width: 154px;
+            height: 68px;
+            resize: none;
+            margin:0;
+            padding: 0;
+            font-size: 16px;
+            border:black solid 1px;
+        }
+        .cal,.del{
+            float: left;
+           width: 26px;
+            height: 70px;
+        }
+        .clear{
+            clear:both;
+        }
+        .content{
+            float: left;
+            width:50px;
+            height:50px;
+            border:black solid 1px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .resultLeft,.resultRight{
+            height: 50px;
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <h3>一个简易计算器</h3>
+    <div class="container">
+        <textarea class="text"></textarea>
+        <button class="cal">计算</button>
+        <button class="del">取消</button>
+        <div class="clear"></div>
+        <div class="con">
+            <div class="content" id="1">1</div>
+            <div class="content" id="2">2</div>
+            <div class="content" id="3">3</div>
+            <div class="content" id="4">4</div>
+            <div class="content" id="5">5</div>
+            <div class="content" id="6">6</div>
+            <div class="content" id="7">7</div>
+            <div class="content" id="8">8</div>
+            <div class="content" id="9">9</div>
+            <div class="content" id="0">0</div>
+            <div class="content" id="+">+</div>
+            <div class="content" id="-">-</div>
+            <div class="content" id="*">*</div>
+            <div class="content" id="/">/</div>
+            <div class="content" id="(">(</div>
+            <div class="content" id=")">)</div>
+        </div>
+    </div>
+    <div class="resultLeft">你的左结合计算结果是：<span></span></div>
+    <div class="resultRight">你的右结合计算结果是：<span></span></div>
+    <script src="main.js"></script>
+</body>
+</html>
